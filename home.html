@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<style>
+body,html{
+          height:100%;
+          font-family:Arial,Helvetica,sans-serif;
+          }
+
+*{ 
+  box-sizing:border-box;
+  }
+
+.bg-img{
+        background-image:url("C:/python_project/templates/nature.jpeg");
+        min-height:380px;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        position:relative;
+        }
+
+.container{
+            position:absolute;
+            right:0;
+            margin:20px;
+            max-width:300px;
+            padding:16px;
+            background-color:white;
+            max-hieght:300px;
+           }
+
+input[type=password]{
+                                        width:100%;
+                                        padding:15px;
+                                        margin:5px 0 2px 0;
+                                        border:none;
+                                        background:#f1f1f1;
+
+                                       }
+
+ input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+input[type=text]{
+                                        width:100%;
+                                        padding:15px;
+                                        margin:5px 0 2px 0;
+                                        border:none;
+                                        background:#f1f1f1;
+
+                                       }
+
+ input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to my workout website</h2>
+<div class="bg-img">
+  <form action="http://localhost:5000/home" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+<p><a href="workout.html>CLICK HERE FOR WORKOUTS</a></p>
+<p>We know daily exercise is good for optimizing health. But with so many options available, it's easy to get overwhelmed with what works.Not to worry I have got your back.</p><p>
+Check out the different workouts you can do for ultimate fitness. You can also combine them in your daily routine exercises.</p>
+
+</body>
+</html>
